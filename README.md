@@ -55,7 +55,7 @@ If you think about it, there's still one problem left:
 Because that's the key point about this project - being able to ask the LLM questions as it's watching data in real time.
 
 The solution? Create a queue with user messages. So if a user sends a message right after the automated user message, it will put that message into the next automated message.
-
+*
 An example that shows this off really well:
 ```
 User message: Coin: BTC, Timestamp: 2023-04-15 14:37:52, Volume: 2.24M, Price: $99.242
@@ -80,3 +80,10 @@ The loop should be fast enough for that. 5 seconds might be too long, but we can
 Another problem: while the AI is answering the user, it can't see the data in real-time. How do we handle this?
 - we could stop generating response after 5s to give it new data
 - or just accept the limitation
+
+To be real, it's not a big deal. The coolest thing about this project is:
+- that it can see data in real-time
+- and know when to say something
+- while being able to answer questions by the user based on what has already happened
+
+Sure, it would be even cooler if, while answering a question, it said "but wait a sec, now this happened".
