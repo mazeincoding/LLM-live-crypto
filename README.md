@@ -76,3 +76,7 @@ AI: Yes, I can see...
 "but what if the message gets delayed and the AI sees it too late, when the data is already old?"
 
 The loop should be fast enough for that. 5 seconds might be too long, but we can always adjust.
+
+Another problem: while the AI is answering the user, it can't see the data in real-time. How do we handle this?
+- we could stop generating response after 5s to give it new data
+- or just accept the limitation
