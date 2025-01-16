@@ -77,7 +77,7 @@ AI: Yes, I can see...
 
 The loop should be fast enough for that. 5 seconds might be too long, but we can always adjust.
 
-Another problem: while the AI is answering the user, it can't see the data in real-time. How do we handle this?
+Another problem: while the AI is generating a response (either to the user, or if it responds by itself), it can't see the data in real-time. How do we handle this?
 - we could stop generating response after 5s to give it new data
 - or just accept the limitation
 
